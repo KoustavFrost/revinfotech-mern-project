@@ -20,7 +20,7 @@ router.post(
         newData.save((err, docs) => {
             if (!err) res.send(docs);
             else {
-                res.status(500).json(err);
+                res.status(400).json(err);
             }
         });
     });
