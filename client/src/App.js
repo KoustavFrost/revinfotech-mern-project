@@ -12,6 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // Importing the components here
 import Layout from './components/layouts/Layout';
 import ListView from './components/ListView';
+import CreateView from './components/CreateView';
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <ListView />
+          </Route>
+          <Route path='/create'>
+            <CreateView />
           </Route>
         </Switch>
       </Layout>
